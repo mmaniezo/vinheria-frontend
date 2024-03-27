@@ -1,0 +1,7 @@
+Aba do carrinho, onde o cliente que veio direto da página dos catálogos coloca suas 
+informações, como nome completo, email e CEP. Logo acima temos os links para mandar o 
+usuario de volta as páginas do ínicio e do catálogo.
+Além disso ele seleciona alguns dos itens disponiveís no carrinho para levar, tendo opção de ser um presente ou pra consumo 
+próprio. Por fim, o método de pagamento, com as opções de PIX ou cartoes de crédito/
+débito e um botão de enviar o formulário para realizar a compra, além de outro botão
+de limpar todos os itens.

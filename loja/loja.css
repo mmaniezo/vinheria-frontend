@@ -1,0 +1,83 @@
+:root {
+    --border-color: rgb(110, 0, 0); /* Define uma variável CSS para a cor da borda */
+  }
+  
+  body {
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    height: 100%; /* Define a altura do corpo da página como 100% da altura do viewport */
+  }
+  
+  #header {
+    background-color: var(--border-color);
+    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    font-family: "Dancing Script", sans-serif; /* Define a fonte do texto do cabeçalho */
+    font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
+  }
+  
+  header a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .alinhamento {
+    display: flex; /* Define um contêiner flexível para alinhar elementos filhos */
+  }
+  
+  nav {
+    width: 100%; /* Define a largura da navegação como 100% do contêiner pai */
+    height: 50px; /* Define a altura da navegação como 50 pixels */
+  }
+  
+  .alinhamento nav.desktop ul {
+    display: flex; /* Define um contêiner flexível para a lista não ordenada da navegação */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui uniformemente os itens ao longo do eixo principal com espaçamento entre eles */
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0 2%; /* Adiciona preenchimento horizontal à lista */
+  }
+  
+  .alinhamento nav.desktop ul li {
+    display: flex; /* Define um contêiner flexível para os itens da lista */
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+  }
+  
+  .alinhamento nav.desktop li a {
+    gap: 4rem; /* Define o espaçamento entre os elementos âncora */
+    text-decoration: none; /* Remove a decoração de texto sublinhado dos links */
+    color: var(--border-color); /* Define a cor do texto dos links usando a variável de cor */
+  }
+  
+  .alinhamento nav.desktop a:hover {
+    color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+  }
+  
+  a img{
+    height: 70vh;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  #footer {
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    font-size: small; /* Define o tamanho da fonte do texto do rodapé */
+    color: var(--border-color);
+    background-color: rgba(255, 0, 0, 0.089);
+  }
+  
+  .borda {
+    border-width: 5px; /* Define a largura da borda */
+    border-style: double; /* Define o estilo da borda como duplo */
+    border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
+  }
+  img{src:local();
+    
+  }

@@ -1,0 +1,74 @@
+/* RM 555541 / Juan Alves */
+:root {
+    --border-color: rgb(110, 0, 0);
+}
+
+nav {
+    color: rgb(110,0,0);
+    padding: 0 3%;
+}
+
+form fieldset{
+    background-color:rgb(199, 199, 199);
+}
+
+.nome-da-pagina {
+    font-family: "Dancing Script", sans-serif;
+    background-color: rgb(110,0,0);
+    color:white
+}
+
+.titulo {
+    font-family: "Dancing Script", sans-serif;
+    color: rgb(110,0,0);
+}
+
+div nav a {
+    font-size:x-large
+}
+
+body {
+    font-size:x-large;
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    height: 100%;
+}
+.alinhamento {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.alinhamento a{
+    gap: 4rem; /* Define o espaçamento entre os elementos âncora */
+    text-decoration: none; /* Remove a decoração de texto sublinhado dos links */
+    color: var(--border-color); /* Define a cor do texto dos links usando a variável de cor */
+  }
+  
+  .alinhamento a:hover {
+    color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+  }
+
+#header {
+    background-color: var(--border-color); /* Define a cor de fundo do cabeçalho usando a variável de cor definida anteriormente */
+    color: rgb(255, 255, 255); /* Define a cor do texto do cabeçalho como branco */
+    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    font-family: "Dancing Script", sans-serif; /* Define a fonte do texto do cabeçalho */
+    font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
+}
+
+  .borda {
+    border-width: 5px; /* Define a largura da borda */
+    border-style: double; /* Define o estilo da borda como duplo */
+    border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
+  }
+
+  #footer {
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    font-size: small; /* Define o tamanho da fonte do texto do rodapé */
+    color: var(--border-color);
+    background-color: rgba(255, 0, 0, 0.089);
+  }
