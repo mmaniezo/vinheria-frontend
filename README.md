@@ -12,4 +12,6 @@ Sobre a empresa: Vizualizar a veraciadade da nossa história e ter uma maior tra
 Personalização: Usufruir de uma experiência com proximidade ao cliente e dicas de vinhos.
 
 Tecnologias Utilizadas
-Frontend: HTML, CSS
+Frontend: HTML5, CSS3
+
+https://mmaniezo.github.io/vinheria-frontend/
