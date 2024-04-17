@@ -1,4 +1,4 @@
-Vinheria Agnello - Projeto de E-commerce
+# Vinheria Agnello - Projeto de E-commerce
 Bem-vindo ao repositório do projeto de e-commerce da Vinheria Agnello! Este projeto visa criar uma plataforma online para a Vinheria Agnello, uma renomada loja de vinhos localizada em São Paulo.
 
 Descrição do Projeto
