@@ -1,33 +1,36 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-    --border-color: rgb(110, 0, 0); /* Define uma variável CSS para a cor da borda */
+  --border-color: #6D1A36; /* Define uma variável CSS para a cor da borda */
+  --background-color: rgb(230, 230, 230);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  height: 100%; /* Define a altura do corpo da página como 100% da altura do viewport */
+  font-family: 'Mukta';
 }
 
-#header {
-    background-color: var(--border-color);
-    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
-    text-align: center; /* Alinha o texto do cabeçalho ao centro */
-    font-family: "Dancing Script", sans-serif; /* Define a fonte do texto do cabeçalho */
-    font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
-  }
-  
-  header a{
-    text-decoration: none;
-    color: white;
-  }
+header {
+  background-color: var(--border-color);
+  padding: 50px; /* Adiciona preenchimento interno ao cabeçalho */
+  text-align: center; /* Alinha o texto do cabeçalho ao centro */
+  font-family: "Lobster"; /* Define a fonte do texto do cabeçalho */
+  font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
+}
 
-.alinhamento {
-  display: flex; /* Define um contêiner flexível para alinhar elementos filhos */
+header a{
+  text-decoration: none;
+  color: white;
 }
 
 nav {
   width: 100%; /* Define a largura da navegação como 100% do contêiner pai */
-  height: 50px; /* Define a altura da navegação como 50 pixels */
+  height: fit-content; /* Define a altura da navegação como 50 pixels */
+  padding: 20px;
 }
 
 .alinhamento nav.desktop ul {
@@ -53,6 +56,15 @@ nav {
   color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
 }
 
+.textinho{
+  color: crimson;
+  font-size: 38.4px;
+  text-align:center;
+  
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
 .borda {
     border-width: 5px; /* Define a largura da borda */
     border-style: double; /* Define o estilo da borda como duplo */
@@ -70,50 +82,130 @@ th, td {
     border-collapse: collapse;
     padding: 10px; 
 }
-.imgs {
-    display: flex;
-    justify-content: space-around; 
-    margin-top: 20px;
-}
-
-.imgfuncionario{
-    padding: 10px;
-    height: 350px;
-    width: 390px;
-}
-
-.imgestoque{
-    padding: 10px;
-    height: 350px;
-    width: 390px;
-    margin-left: 90px;
-}
-
-.imgvinheria{
-    padding: 10px;
-    margin-left: 90px;
-}
 
 #footer {
-    text-align: center; /* Alinha o texto do rodapé ao centro */
-    font-size: small; /* Define o tamanho da fonte do texto do rodapé */
+    text-align: center; 
+    font-size: small; 
+    padding: 15px;
     color: var(--border-color);
     background-color: rgba(255, 0, 0, 0.089);
     height: 160px;
   }
 
   .fonte{
-    font-family: 'Open Sans';
+    font-family: 'Mukta';
     font-size: 20px;
+    text-align: justify;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    flex-direction: row;
+    border-top: solid 5px #6D1A36;
+    border-right: solid 10px #6D1A36;
+    border-bottom: solid 5px #6D1A36;
+    border-left: solid 10px #6D1A36;
+
+    border-radius: 10px;
   }
+
+  @keyframes aparecer {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+span.destaque{
+  color: crimson;
+}
   
   .dance{
+    animation-duration: 2s;
+    animation-name: aparecer;
     font-family: "Dancing Script", sans-serif;
     text-align: center;
+ 
     color: var(--border-color);
     font-size: 38.4px;
   }
 
   article {
-    padding: 0px 300px 50px 300px;
+    padding: 10px 150px 20px 150px;
   }
+
+  .box {
+    width: 10px;
+    height: 10px;
+  }
+
+  .vin{
+    border-top: solid 5px #6D1A36;
+    border-right: solid 5px #6D1A36;
+    border-bottom: solid 5px #6D1A36;
+    border-left: solid 5px #6D1A36;
+  }
+
+  .arm{
+    border-top: solid 5px #6D1A36;
+    border-right: solid 5px #6D1A36;
+    border-bottom: solid 5px #6D1A36;
+    border-left: solid 5px #6D1A36;
+  }
+
+  .cli{
+    border-top: solid 5px #6D1A36;
+    border-right: solid 5px #6D1A36;
+    border-bottom: solid 5px #6D1A36;
+    border-left: solid 5px #6D1A36;
+  }
+
+  .caixinha{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 550px;
+    background-color: #6D1A36;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  transition: all 0.5s ease-out;
+  border: 30%;
+}
+
+#box2:hover {
+  transform: scale(1.3);
+}
+
+.compre{
+  text-align: center;
+  color: white;
+}
+
+.vinhoA{
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  width: 250px;
+}
+
+.vinho1{
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  width: 250px;
+}
+
+.vinhoB{
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  width: 250px;
+}
