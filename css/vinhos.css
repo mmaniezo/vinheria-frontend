@@ -1,76 +1,104 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
-    --border-color: rgb(110, 0, 0); /* Define uma variável CSS para a cor da borda */
+    --border-color: #6D1A36; /* Define uma variável CSS para a cor da borda */
+    --bloco-cinza:rgb(230, 230, 230);
   }
-  
+ 
   body {
     margin: 0;
     padding: 0;
     height: 100%; /* Define a altura do corpo da página como 100% da altura do viewport */
+    font-family: "Mukta";
   }
-  
-  #header {
+ 
+  header {
     background-color: var(--border-color);
-    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+    padding: 50px; /* Adiciona preenchimento interno ao cabeçalho */
     text-align: center; /* Alinha o texto do cabeçalho ao centro */
-    font-family: "Dancing Script", sans-serif; /* Define a fonte do texto do cabeçalho */
+    font-family: "Lobster";
     font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
   }
-  
+  @keyframes backInDown {
+    0% {
+      transform: translateY(-1200px) scale(.7);
+      opacity: .7;
+    }
+   
+    80% {
+      transform: translateY(0px) scale(.7);
+      opacity: .7;
+    }
+   
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+   
+  .backInDown {
+    -webkit-animation: backInDown 1.5s;
+    animation: backInDown 1.5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
   header a{
     text-decoration: none;
     color: white;
+   
   }
-  
-  .alinhamento {
-    display: flex; /* Define um contêiner flexível para alinhar elementos filhos */
-  }
-  
+ 
   nav {
     width: 100%; /* Define a largura da navegação como 100% do contêiner pai */
-    height: 50px; /* Define a altura da navegação como 50 pixels */
+    height: fit-content; /* Define a altura da navegação como 50 pixels */
+    padding: 20px;
   }
-  
+ 
   .alinhamento nav.desktop ul {
     display: flex; /* Define um contêiner flexível para a lista não ordenada da navegação */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-between; /* Distribui uniformemente os itens ao longo do eixo principal com espaçamento entre eles */
+    justify-content: space-around; /* Distribui uniformemente os itens ao longo do eixo principal com espaçamento entre eles */
     list-style-type: none; /* Remove os marcadores de lista padrão */
     padding: 0 2%; /* Adiciona preenchimento horizontal à lista */
+   
   }
-  
+ 
   .alinhamento nav.desktop ul li {
     display: flex; /* Define um contêiner flexível para os itens da lista */
     list-style-type: none; /* Remove os marcadores de lista padrão */
   }
-  
+ 
   .alinhamento nav.desktop li a {
     gap: 4rem; /* Define o espaçamento entre os elementos âncora */
     text-decoration: none; /* Remove a decoração de texto sublinhado dos links */
     color: var(--border-color); /* Define a cor do texto dos links usando a variável de cor */
   }
-  
+ 
   .alinhamento nav.desktop a:hover {
-    color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+    color:rgb(199, 0, 0); /* Define a cor do texto dos links ao passar o mouse sobre eles */
   }
-
+ 
 section article img{
 margin: 0 auto;
 display: block;
 width: 600px;
 max-width: 90%;
 }
-
+ 
 section article p {
     text-align: center;
     font-size: x-large;
-    width: 100%;
+    width: 20%;
     margin: 0 auto;
     background-color: rgba(110, 0, 0, 0.705);
     color: white;
     display: inline-block;
-
+ 
 }
-
+ 
 body h2{
     text-align: center;
 }
@@ -83,15 +111,15 @@ section img{
     width: 18%;
     height: 18%;
     background-color: rgb(110, 0, 0); border: auto;
-    
+   
 }
-
+ 
 body section {
-    background-image: url("fts/uva-safra.jpg");
+    background-image: url("/Sobre os vinhos/img/uva-safra.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-
+ 
 }
 section article h2  {
     background-color: rgba(110, 0, 0, 0.705);
@@ -99,9 +127,9 @@ section article h2  {
     font-size: x-large;
     display: inline-block;
     text-align: center;
-    
+   
 }
-
+ 
 .text-center-bg {
     display: inline-block;
     text-align: center;
@@ -115,34 +143,57 @@ section article h1 {
     display: inline-block;
     font-weight: bold;
 }    
-
+ 
 #footer {
     text-align: center; /* Alinha o texto do rodapé ao centro */
     font-size: small; /* Define o tamanho da fonte do texto do rodapé */
     color: var(--border-color);
-    background-color: rgba(255, 0, 0, 0.089);
+    background-color: #85012d3b;
     height: 160px;
+    padding: 15px;
   }
-
+ 
 .fonte{
-    font-family: 'Open Sans';
+   
     font-size: 20px;
   }
-  
+ 
 .dance{
-    font-family: "Dancing Script", sans-serif;
+   
     text-align: center;
     color: var(--border-color);
     font-size: 38.4px;
+    font-family: "Lobster";
 }
-
+ 
 .borda{
     border-width: 5px; /* Define a largura da borda */
-    border-style: double; /* Define o estilo da borda como duplo */
+    border-style: inset; /* Define o estilo da borda como duplo */
     border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
     width: 70%;
     background-color: white;
     margin: 0 auto;
 }
-
-
+div h2{
+  border-width: 5px; /* Define a largura da borda */
+  border-style: inset; /* Define o estilo da borda como duplo */
+  border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
+  width: 50%;
+  background-color: white;
+  margin: 0 auto;
+}
+img{
+  flex-wrap: wrap;
+}
+div p {
+  width: 30px;
+  height: 30px;
+  transition: height 2s, width 2s;
+  display: block;
+}
+div p:hover {
+  height: 50%;
+  width: 50%;
+  padding: 100px;
+  background-color: brown;
+}
