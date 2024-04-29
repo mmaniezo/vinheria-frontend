@@ -1,23 +1,24 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --border-color: rgb(110, 0, 0); /* Define uma variável CSS para a cor da borda */
-
+  --border-color: #6D1A36; /* Define uma variável CSS para a cor da borda */
+  --background-color: rgb(230, 230, 230);
 }
 
 body {
-  margin: 0;
-  padding: 0;
   height: 100%; /* Define a altura do corpo da página como 100% da altura do viewport */
+  font-family: 'Mukta';
 }
 
-#header {
+header {
   background-color: var(--border-color);
-  padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+  padding: 50px; /* Adiciona preenchimento interno ao cabeçalho */
   text-align: center; /* Alinha o texto do cabeçalho ao centro */
-  font-family: "Dancing Script", sans-serif; /* Define a fonte do texto do cabeçalho */
+  font-family: "Lobster"; /* Define a fonte do texto do cabeçalho */
   font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
 }
 
@@ -26,13 +27,10 @@ header a{
   color: white;
 }
 
-.alinhamento {
-  display: flex; /* Define um contêiner flexível para alinhar elementos filhos */
-}
-
 nav {
   width: 100%; /* Define a largura da navegação como 100% do contêiner pai */
-  height: 50px; /* Define a altura da navegação como 50 pixels */
+  height: fit-content; /* Define a altura da navegação como 50 pixels */
+  padding: 20px;
 }
 
 .alinhamento nav.desktop ul {
@@ -67,7 +65,7 @@ nav {
 
 section.session {
   padding: 0 2%; /* Adiciona preenchimento horizontal às sessões */
-  background-color: rgb(199, 199, 199); /* Define a cor de fundo das sessões */
+  background-color: var(--background-color); /* Define a cor de fundo das sessões */
 }
 
 .session h2, .artigo h2{
@@ -78,12 +76,12 @@ article.artigo {
   padding: 0 2%; /* Adiciona preenchimento horizontal aos artigos */
   height: 100%;
   min-height: 345px; /* Define a altura mínima dos artigos */
-  background-color: rgb(199, 199, 199); /* Define a cor de fundo dos artigos */
+  background-color: var(--background-color); /* Define a cor de fundo dos artigos */
 }
 
 aside.lateral{
   height: 100vh; /* Define a altura da barra lateral */
-  background-color: rgb(199, 199, 199); /* Define a cor de fundo da barra lateral */
+  background-color: var(--background-color); /* Define a cor de fundo da barra lateral */
 }
 
 .lateral{
@@ -102,7 +100,6 @@ aside.lateral img {
 }
 
 .biografia{
-  font-family: 'Open Sans';
   display: flex;
   text-align: center;
   padding: 0px 20px 150px 20px;
@@ -116,6 +113,7 @@ aside.lateral img {
 }
 
 #footer {
+  padding: 15px;
   text-align: center; /* Alinha o texto do rodapé ao centro */
   font-size: small; /* Define o tamanho da fonte do texto do rodapé */
   color: var(--border-color);
@@ -125,13 +123,12 @@ aside.lateral img {
 
 .borda {
   border-width: 5px; /* Define a largura da borda */
-  border-style: double; /* Define o estilo da borda como duplo */
+  border-style: inset; /* Define o estilo da borda como duplo */
   border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
 }
 
 .p{
   font-size: 18px;
-  font-family: 'Open Sans';
 }
 
 .container__botao{
