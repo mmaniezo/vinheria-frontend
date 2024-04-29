@@ -2,79 +2,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
+    <!--Fonte Texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--Fonte Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/carrinho.css">
 </head>
 <body>
-    <header id="header">
-        <h1 class="nome-da-pagina">Carrinho de compras</h1>
-    </header>
+    <header><h1 class="backInDown"><a href="/index.html">Vinheria Agnello</a></h1></header>
     <hr />
-    <div>
-        <nav class="alinhamento">
+    <div class="alinhamento">
+        <nav class="desktop">
             <a href="/index.html">Voltar ao início</a>
-            
             <a href="/pages/loja.html">Voltar ao catálogo</a>
         </nav>
     </div>
     <hr />
-    <form class="borda">
-        <fieldset class="cinza"> 
-            <h1 class="titulo">Seu carrinho</h1>
-            <label for="nome">Nome Completo:</label>
-            <input id="nome" type="text" placeholder="digite seu nome..." required>
-            
-            <br><br>
-            
-            <label for="email">Email de contato:</label>
-            <input id="email" type="text" placeholder="digite seu email..." required>
-            
-            <br><br>
-            
-            <label for="nome">CEP:</label>
-            <input id="cep" type="text" placeholder="digite seu cep..." required>
-            
-            <br><br>
-            
-            <h2 class="titulo">Selecione quais itens do carrinho você deseja levar:</h2>
-            <label for="item1">Vinho Tinto - R$99,90</label>
-            <input id="item1" type="checkbox" name="tinto" value="vinho tinto">
-            <label for="item2">Vinho Branco - R$110,90</label>
-            <input id="item2" type="checkbox" name="branco" value="vinho branco">
-            
-            <br>
-            
-            <label for="item3">Vinho Rosé - R$99,00</label>
-            <input id="item3" type="checkbox" name="rose" value="vinho rose">
-            <label for="item4">Espumante - R$90,00</label>
-            <input id="item4" type="checkbox" name="espumante" value="espumante">
-            
-            <br><br>
-            
-            <label>A compra seria um presente para alguem ou para si mesmo?</label>
-            <select>
-                <option value="Presente">Presente para alguem</option>
-                <option value="Pessoal">Para si mesmo</option>
-            </select>
-            <br><br>
-            <label>Forma de Pagamento</label>
-            <select>
-                <option value="Débito / Crédito">Débito ou Crédito</option>
-                <option value="Pix">Pix</option>
-            </select>
-            <br><br>
-            <button type="submit">Finalizar compra</button>
-            <button type="reset">Limpar carrinho</button>       
-
+    <form class="formulario">
+        <fieldset> 
+            <div class="carrinho">
+                <h1 class="titulo">Seu carrinho</h1>
+                <label for="nome">Nome Completo: </label>
+                <input class="input-texto" id="nome" type="text" placeholder="digite seu nome..." required>
+                
+                <br><br>
+                
+                <label for="email">Email de contato: </label>
+                <input class="input-texto" id="email" type="text" placeholder="digite seu email..." required>
+                
+                <br><br>
+                
+                <label for="nome">CEP: </label>
+                <input class="input-texto" id="cep" type="text" placeholder="digite seu cep..." required>
+                
+                <br><br>
+                
+                <h2 class="titulo">Selecione quais itens do carrinho você deseja levar:</h2>
+                <div class="opcoes">
+                <input id="item1" type="checkbox" name="tinto" value="vinho tinto">
+                <label for="item1">Vinho Tinto Miolo Sebrumo Cabernet Sauvignon 750ml - R$49,90<br>
+                
+                <input id="item2" type="checkbox" name="branco" value="vinho branco">
+                <label for="item2">Vinho Tinto Suave Adega do Vale 750ml - R$45,90</label><br>
+                
+                <input id="item3" type="checkbox" name="rose" value="vinho rose">
+                <label for="item3">Vinho San Diego Tinto Suave 750ml - R$62,90</label><br>
+                
+                <input id="item4" type="checkbox" name="espumante" value="espumante">
+                <label for="item4">Vinho Pérgola Tinto Suave 1L - R$19,90</label><br>
+                
+                <input id="item1" type="checkbox" name="tinto" value="vinho tinto">
+                <label for="item1">Vinho Português Olaria Tinto Suave 750ml - R$85,90</label><br>
+                
+                <input id="item2" type="checkbox" name="branco" value="vinho branco">
+                <label for="item2">Vinho Rosé Casa Valduga Naturelle Rosé Suave 750ml - R$89,90</label><br>
+                
+                <input id="item3" type="checkbox" name="rose" value="vinho rose">
+                <label for="item3">Garibaldi Terroir Pinot Noir Rosé 750ml - R$230,90</label><br>
+                
+                <input id="item4" type="checkbox" name="espumante" value="espumante">
+                <label for="item4">Vinho Porteño Tinto Suave 750ml - R$65,90</label><br>
+                </div>
+                
+                <br>
+                
+                <label>Forma de Pagamento</label>
+                <select>
+                    <option value="Débito / Crédito">Débito ou Crédito</option>
+                    <option value="Pix">Pix</option>
+                </select>
+                <br><br>
+                <button type="submit">Finalizar compra</button>
+                <button type="reset">Limpar carrinho</button>       
+            </div>
         </fieldset>
     </form>
     <hr />
-    <footer id="footer">
+    <footer>
       <h2>Formas de Pagamento</h2>
       <img alt="boleto bancário" width="35px" height="35px" src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/boleto.svg">
       <img alt="cartão American Express" width="35px" height="35px" src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/american-express.svg">

@@ -159,7 +159,6 @@ section article h1 {
   }
  
 .dance{
-   
     text-align: center;
     color: var(--border-color);
     font-size: 38.4px;
@@ -178,7 +177,7 @@ div h2{
   border-width: 5px; /* Define a largura da borda */
   border-style: inset; /* Define o estilo da borda como duplo */
   border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
-  width: 50%;
+  width: 70%;
   background-color: white;
   margin: 0 auto;
 }

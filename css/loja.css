@@ -77,12 +77,13 @@ nav {
 }
 
 .alinhamento nav.desktop a:hover {
-  color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+  color: rgb(199, 0, 0); /* Define a cor do texto dos links ao passar o mouse sobre eles */
 }
 
 .catalogo {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -136,20 +137,6 @@ footer {
   text-align: center; /* Alinha o texto do rodapé ao centro */
   font-size: small; /* Define o tamanho da fonte do texto do rodapé */
   color: var(--border-color);
-  background-color: rgba(255, 0, 0, 0.089);
+  background-color: #85012d3b;
   padding: 15px;
-}
-
-.borda {
-  border-width: 5px;
-  /* Define a largura da borda */
-  border-style: double;
-  /* Define o estilo da borda como duplo */
-  border-color: var(--border-color);
-  /* Define a cor da borda usando a variável de cor */
-}
-
-img {
-  src: local();
-
 }
