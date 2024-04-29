@@ -22,6 +22,30 @@ header {
   font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
 }
 
+@keyframes backInDown {
+  0% {
+    transform: translateY(-1200px) scale(.7);
+    opacity: .7;
+  }
+
+  80% {
+    transform: translateY(0px) scale(.7);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInDown {
+  -webkit-animation: backInDown 1.5s;
+  animation: backInDown 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
 header a{
   text-decoration: none;
   color: white;
@@ -53,7 +77,7 @@ nav {
 }
 
 .alinhamento nav.desktop a:hover {
-  color: red; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+  color: rgb(199, 0, 0); /* Define a cor do texto dos links ao passar o mouse sobre eles */
 }
 
 .container {
@@ -64,6 +88,9 @@ nav {
 }
 
 section.session {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
   padding: 0 2%; /* Adiciona preenchimento horizontal às sessões */
   background-color: var(--background-color); /* Define a cor de fundo das sessões */
 }
@@ -73,6 +100,9 @@ section.session {
 }
 
 article.artigo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0 2%; /* Adiciona preenchimento horizontal aos artigos */
   height: 100%;
   min-height: 345px; /* Define a altura mínima dos artigos */
@@ -96,7 +126,7 @@ aside.lateral{
 }
 
 aside.lateral img {
-  width: 90%;
+  width: 75%;
 }
 
 .biografia{
@@ -107,9 +137,15 @@ aside.lateral img {
 
 .video{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+article.div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer {
@@ -117,7 +153,7 @@ aside.lateral img {
   text-align: center; /* Alinha o texto do rodapé ao centro */
   font-size: small; /* Define o tamanho da fonte do texto do rodapé */
   color: var(--border-color);
-  background-color: rgba(255, 0, 0, 0.089);
+  background-color: #85012d3b;
   height: 160px;
 }
 
@@ -143,9 +179,15 @@ aside.lateral img {
 }
 
 .botaocor:hover{
-  color: red;
+  color: rgb(199, 0, 0);
 }
 
 .buttonvine{
   padding: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  iframe {
+    display: none;
+  }
 }
