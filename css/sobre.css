@@ -120,7 +120,7 @@ th, td {
   .fonte{
     font-family: 'Mukta';
     font-size: 20px;
-    text-align: justify;
+    justify-content: space-around;
     animation-duration: 2s;
     animation-name: aparecer;
     flex-direction: row;
