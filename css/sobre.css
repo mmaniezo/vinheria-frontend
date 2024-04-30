@@ -113,7 +113,7 @@ th, td {
     font-size: small; 
     padding: 15px;
     color: var(--border-color);
-    background-color: rgba(255, 0, 0, 0.089);
+    background-color: #85012d3b;
     height: 160px;
   }
 
