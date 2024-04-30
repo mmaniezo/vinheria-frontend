@@ -60,7 +60,7 @@ nav {
 .alinhamento nav.desktop ul {
   display: flex; /* Define um contêiner flexível para a lista não ordenada da navegação */
   align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: space-between; /* Distribui uniformemente os itens ao longo do eixo principal com espaçamento entre eles */
+  justify-content: space-around; /* Distribui uniformemente os itens ao longo do eixo principal com espaçamento entre eles */
   list-style-type: none; /* Remove os marcadores de lista padrão */
   padding: 0 2%; /* Adiciona preenchimento horizontal à lista */
 }
@@ -84,7 +84,8 @@ nav {
   display: grid; /* Define um contêiner de layout de grade */
   grid-template-columns: 60% 40%; /* Define duas colunas na grade com larguras proporcionais */
   grid-template-rows: 345px; /* Define a altura das linhas da grade */
-  height: 100vh; /* Define a altura do contêiner como 100% da altura do viewport */
+  height: 100%; /* Define a altura do contêiner como 100% da altura do viewport */
+  overflow: auto;
 }
 
 section.session {
@@ -110,7 +111,7 @@ article.artigo {
 }
 
 aside.lateral{
-  height: 100vh; /* Define a altura da barra lateral */
+  height: 930px; /* Define a altura da barra lateral */
   background-color: var(--background-color); /* Define a cor de fundo da barra lateral */
 }
 
@@ -125,14 +126,19 @@ aside.lateral{
   padding-top: 150px;
 }
 
-aside.lateral img {
-  width: 75%;
-}
-
 .biografia{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   padding: 0px 20px 150px 20px;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
 }
 
 .video{
@@ -142,6 +148,7 @@ aside.lateral img {
   justify-content: center;
   padding: 10px;
 }
+
 article.div{
   display: flex;
   align-items: center;
@@ -161,6 +168,7 @@ article.div{
   border-width: 5px; /* Define a largura da borda */
   border-style: inset; /* Define o estilo da borda como duplo */
   border-color: var(--border-color); /* Define a cor da borda usando a variável de cor */
+  overflow: auto;
 }
 
 .p{
