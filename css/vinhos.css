@@ -115,7 +115,7 @@ section img{
 }
  
 body section {
-    background-image: url("/Sobre os vinhos/img/uva-safra.jpg");
+    background-image: url("../Sobre os vinhos/img/uva-safra.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
