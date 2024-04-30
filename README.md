@@ -11,6 +11,12 @@ Facilidade de compra: Os clientes podem adicionar produtos ao carrinho e realiza
 Sobre a empresa: Vizualizar a veraciadade da nossa história e ter uma maior transparência.
 Personalização: Usufruir de uma experiência com proximidade ao cliente e dicas de vinhos.
 
+Atualizações
+Melhoramos a interface tanto do HTML, quanto do CSS, com funcionalidades hover, animações, transition, e várias outras funções.
+Visamos também por um aprimoramento estético, tanto do footer, quanto das fontes, bordas, cores, etc.
+O foco principal da melhora foi o CSS, já que adquirimos novas habilidades no decorer do tempo em que fizemos o passado,
+por sorte tivemos a tutela do nosso professor Lucas que nos proporcionou o trabalho em questão. 
+
 Tecnologias Utilizadas
 Frontend: HTML5, CSS3
 
