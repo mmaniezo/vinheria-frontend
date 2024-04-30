@@ -22,10 +22,35 @@ header {
   font-size: larger; /* Define o tamanho da fonte do texto do cabeçalho */
 }
 
+@keyframes backInDown {
+  0% {
+    transform: translateY(-1200px) scale(.7);
+    opacity: .7;
+  }
+
+  80% {
+    transform: translateY(0px) scale(.7);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInDown {
+  -webkit-animation: backInDown 1.5s;
+  animation: backInDown 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
 header a{
   text-decoration: none;
   color: white;
 }
+
 
 nav {
   width: 100%; /* Define a largura da navegação como 100% do contêiner pai */
